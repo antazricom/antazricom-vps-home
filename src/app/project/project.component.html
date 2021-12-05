@@ -1,0 +1,9 @@
+<section class="projectSection">
+  <h1>{{ name }}</h1>
+  
+  <img class="projectImg" src="{{ imgSrc }}" height="{{ imgHeight }}" width="{{ imgWidth }}" alt="{{ description }}" title="{{ name }}" />
+
+  <p>{{ description }}</p>
+  <p><strong>{{ date | date:'yyyy-MM-dd' }}</strong></p>
+  <a href="{{ url }}" target="_blank">Afficher le projet</a>
+</section>

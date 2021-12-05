@@ -1,0 +1,42 @@
+$main-color: goldenrod;
+$valid-color: lightgreen;
+$invalid-color: lightcoral;
+
+#wrapper {
+  margin: 7% auto 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+#main-title {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 4em;
+  text-align: center;
+  font-weight: bold;
+  margin: 10px auto;
+  text-transform: uppercase;
+  color: $main-color;
+}
+
+#projects {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.project {
+  padding: 20px;
+  margin: 20px;
+  border-radius: 5%;
+  background: #fcfcfc;
+  width: 20%;
+}
+
+.available-project {
+  border: 2px dotted $valid-color;
+}
+
+.unavailable-project {
+  opacity: 0.5;
+  border: 2px dotted $invalid-color;
+}
